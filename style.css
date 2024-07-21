@@ -1,0 +1,219 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: navy; /* Navy blue background for the body */
+    color: white;
+}
+
+/* Navbar styling */
+.navbarScroll {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s;
+}
+.navbarScroll.scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar {
+    background-color: #333;
+}
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+.nav-link:hover {
+    color: yellow !important; /* Yellow color for hover */
+}
+
+/* Main banner styling */
+.bgimage {
+    background: url('your-image-path.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.hero_title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero_desc {
+    font-size: 1.5rem;
+}
+
+/* Section headings */
+h1 {
+    color: black; /* White color for headings */
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* About section */
+#about .card {
+    background-color: rgba(0, 0, 128, 0.7); /* Navy blue background with some transparency */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+#about .card-title {
+    color: yellow; /* Yellow color for the card title */
+    font-size: 24px;
+    font-weight: bold;
+}
+#about .card-body {
+    padding: 20px;
+}
+#about img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.imageAboutPage {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Education section card styling */
+#education.Card {
+    background-color: rgba(33, 37, 41, 0.7);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#education.card-title {
+    color: yellow; /* Yellow color for the card titles */
+    font-size: 24px;
+    font-weight: bold;
+}
+#education.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+#education.card-text {
+    font-size: 16px;
+}
+#education.card-body {
+    padding: 20px;
+}
+
+/* Services section */
+#services .card {
+    background-color: rgba(33, 37, 41, 0.7); /* Navy blue background with some transparency */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#services .card-title {
+    color: yellow; /* Yellow color for the card titles */
+    font-size: 24px;
+    font-weight: bold;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#services .servicesIcon {
+    font-size: 36px;
+    color: yellow; /* Yellow color for icons */
+}
+#services .card-title {
+    color: yellow; /* Yellow color for the card titles */
+    font-size: 24px;
+    font-weight: bold;
+}
+#services .card-body {
+    padding: 20px;
+}
+
+/* Experience section */
+#experience .card {
+    background-color: rgba(33, 37, 41, 0.7); /* Navy blue background */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+#experience .card-img-top {
+    border-bottom: 2px solid yellow; /* Yellow border under image */
+    object-fit: cover;
+    height: 200px; /* Fixed height for images */
+}
+#experience .card-body {
+    padding: 20px;
+}
+#experience .card-title {
+    color: yellow; /* Yellow color for card titles */
+    font-size: 22px;
+    font-weight: bold;
+}
+#experience .card-text {
+    font-size: 16px;
+}
+#experience .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+    #experience .card-img-top {
+        height: 150px; /* Smaller height for mobile screens */
+    }
+}
+
+/* Contact section */
+form {
+    background: rgba(33, 37, 41, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+.form-control {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+}
+.form-control::placeholder {
+    color: white;
+}
+.btn-primary {
+    background-color: yellow;
+    border: none;
+    color: navy; /* Navy color for button text */
+}
+.btn-primary:hover {
+    background-color: white;
+    color: navy;
+}
+ul.list-unstyled {
+    list-style: none;
+    padding: 0;
+}
+ul.list-unstyled li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
