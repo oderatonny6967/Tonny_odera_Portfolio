@@ -277,4 +277,14 @@ h1 {
     height: 150px;
     object-fit: cover;
 }
+/* Change the color of the social link icon */
+.social-link i {
+    color: black; /* Facebook's official color */
+    transition: color 0.3s ease; /* Optional: smooth color transition */
+}
+
+/* Change the color on hover */
+.social-link:hover i {
+    color: #1d2d50; /* Change to a different color on hover */
+}
 
