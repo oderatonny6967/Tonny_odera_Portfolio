@@ -43,7 +43,15 @@
         </div>
     </div>
 </nav>
-
+<section id="landing" class="bgimage d-flex flex-column justify-content-center align-items-center text-center">
+    <div class="hero-text">
+        <h1 class="hero_title">Hello, I'm Tonny Odera</h1>
+        <p class="hero_desc">Computer Scientist</p>
+        
+        <img src="images/about.jpeg" class="img-fluid mt-3 rounded-circle profile-image" alt="Tonny's Image">
+    </div>
+    <a href="C:\Users\Tonny\Downloads\Documents\Tonny Resume_3.pdf" class="btn btn-primary mt-3">View My Resume</a>
+  </section>
 
 
 <!-- About section -->
@@ -52,38 +60,29 @@
         <h1 class="text-center">About Me</h1>
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <div class="card bg-dark text-white">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="images/about.jpeg" class="img-fluid rounded-start" alt="Tonny's Image">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Tonny Odera</h5>
-                                <ul class="list-unstyled">
-                                    <li><strong>Age:</strong> 22</li>
-                                    <li><strong>Occupation:</strong> Computer science </li>
-                                </ul>
-                                <p class="card-text">I am a Kenyan native who graduated in computer science from Dedan Kimathi University of Technology and possess experience with networking, data, and data entry, statistics. I have an intense feeling of motivation, am focused on obtaining things done, and love technology. I also work well in a team and am always prepared to go above and beyond to complete a task.</p>
-                                <p class="card-text">I am proficient in a variety of networking applications, including Cisco Packet Tracer. I've worked with Python, Java and am familiar with libraries such as pandas, numpy, seaborn, matplotlib, scikit. I have also worked with frameworks such as Django for website and app development. I am also proficient with  Power BI tools for data analysis and visualization.</p>
-                                <p class="card-text">My technical abilities are complemented by my attention to detail and organizational capabilities. I can work efficiently and I have outstanding communication skills.</p>
-                            </div>
+                <div class="about-content">
+                    <div class="bubble-frame">
+                        <img src="images/about.jpeg" class="img-fluid" alt="Tonny's Image">
+                    </div>
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Tonny Odera</h5>
+                            <p class="card-text">I am a Kenyan native who graduated in computer science from Dedan Kimathi University of Technology and possess experience with networking, data science, and data entry, statistics. I have an intense feeling of motivation, am focused on obtaining things done, and love technology. I also work well in a team and am always prepared to go above and beyond to complete a task.</p>
+                            <p class="card-text">I've worked with Python, Java and am familiar with libraries such as pandas, numpy, seaborn, matplotlib, scikit. I have also worked with frameworks such as Django for website and app development. I am also proficient with  Power BI tools for data analysis and visualization.</p>
+                            <p class="card-text">My technical abilities are complemented by my attention to detail and organizational capabilities. I can work efficiently and I have outstanding communication skills.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
-
-
-<!-- Education section -->
+</section><!-- Education section -->
 <section id="education">
     <div class="container mt-4 pt-4">
         <h1 class="text-center">Education</h1>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-lg-4 mt-4">
-                <div class="card educationCard">
+                <div class="card educationCard left-card">
                     <div class="card-body text-center">
                         <h4 class="card-title">Victory Junior School</h4>
                         <p class="card-text">Primary School - Graduated in 2015</p>
@@ -91,24 +90,26 @@
                 </div>
             </div>
             <div class="col-lg-4 mt-4">
-                <div class="card educationCard">
-                    <div class="card-body text-center">
-                        <h4 class="card-title">Ribe Boys High School</h4>
-                        <p class="card-text">Secondary School - Graduated in 2019</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mt-4">
-                <div class="card educationCard">
+                <div class="card educationCard center-card">
                     <div class="card-body text-center">
                         <h4 class="card-title">Dedan Kimathi University</h4>
                         <p class="card-text">Undergraduate Degree in Computer Science - Graduated in 2024</p>
                     </div>
                 </div>
             </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card educationCard right-card">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Ribe Boys High School</h4>
+                        <p class="card-text">Secondary School - Graduated in 2019</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
+
+
 <!-- services section -->
 <section id="services">
     <div class="container">
@@ -262,6 +263,22 @@
             $('.navbarScroll').removeClass('scrolled');
         }
     });
+    document.addEventListener('DOMContentLoaded', () => {
+    const services = document.querySelectorAll('.servicesText');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    services.forEach(service => {
+        observer.observe(service);
+    });
+});
+
 </script>
   </body>
   </html>
