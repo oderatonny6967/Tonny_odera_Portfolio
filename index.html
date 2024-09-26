@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>www.tonnyportfolio.com</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- linking css file -->
-  <link rel="stylesheet" href="style.css">
-  <!-- bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Tonny Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
-
 <body>
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
-    <div class="container">
-        <a class="navbar-brand" href="#">TONNY</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#education">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbarScroll">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Tonny's Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about"><i class="fas fa-user"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services"><i class="fas fa-graduation-cap"></i>Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</nav>
-<section id="landing" class="bgimage d-flex flex-column justify-content-center align-items-center text-center">
-    <div class="hero-text">
-        <h1 class="hero_title">Hello, I'm Tonny Odera</h1>
-        <p class="hero_desc">Computer Scientist</p>
-        
-        <img src="images/about.jpeg" class="img-fluid mt-3 rounded-circle profile-image" alt="Tonny's Image">
-    </div>
+  </nav>
 
-    <a href="https://drive.google.com/uc?export=download&id=1Cx3YMvkP6d73VEzUEv4ev_BzJNdhTYmqhcQ9JOjbo_8" class="btn btn-primary mt-3"download="Tonny_Resume_3.pdf">Download my CV</a>
-    <div class="col-lg-6">
+  <!-- Landing Section -->
+  <section id="landing" class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm Tonny Odhiambo Odera</h1>
+      <p>|Computer Science | Mentor</p>
+      <a href="https://docs.google.com/document/d/1Cx3YMvkP6d73VEzUEv4ev_BzJNdhTYmqhcQ9JOjbo_8/export?format=pdf" class="btn btn-primary">View My Resume</a>
+      <div class="col-lg-6">
         <h4>Lets Talk </h4>
         <ul class="list-unstyled">
-            <li><i class="fas fa-envelope"></i> tonnyodera6967@gmail.com</li>
-            <li><i class="fas fa-phone"></i> +254-700-215-847</li>
+            <i class="fas fa-envelope"></i> tonnyodera6967@gmail.com
+            <i class="fas fa-phone"></i> +254-700-215-847
             <div class="social-icons mt-4">
                 <a href="https://www.facebook.com/princetonny" target="_blank" class="social-link">
                     <i class="fab fa-facebook-f me-3"></i>
@@ -77,58 +79,27 @@
             
         </ul>
     </div>
-
+    </div>
   </section>
-
-
-<!-- About section -->
+<!-- About section --> 
 <section id="about">
     <div class="container">
         <h1 class="text-center">About Me</h1>
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="about-content">
-                    <div class="bubble-frame">
-                        <img src="images/about.jpeg" class="img-fluid" alt="Tonny's Image">
-                    </div>
-                    <div class="card bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title">Tonny Odera</h5>
-                            <p class="card-text">I am a Kenyan native who graduated in computer science from Dedan Kimathi University of Technology and possess experience with networking, data science, and data entry, statistics. I have an intense feeling of motivation, am focused on obtaining things done, and love technology. I also work well in a team and am always prepared to go above and beyond to complete a task.</p>
-                            <p class="card-text">I've worked with Python, Java and am familiar with libraries such as pandas, numpy, seaborn, matplotlib, scikit. I have also worked with frameworks such as Django for website and app development. I am also proficient with  Power BI tools for data analysis and visualization.</p>
-                            <p class="card-text">My technical abilities are complemented by my attention to detail and organizational capabilities. I can work efficiently and I have outstanding communication skills.</p>
-                        </div>
-                    </div>
+        <div class="row justify-content-center align-items-center">
+            <!-- Image Column -->
+            <div class="col-md-4 text-center">
+                <div class="bubble-frame">
+                    <img src="images/about.jpeg" class="img-fluid" alt="Tonny's Image">
                 </div>
             </div>
-        </div>
-    </div>
-</section><!-- Education section -->
-<section id="education">
-    <div class="container mt-4 pt-4">
-        <h1 class="text-center">Education</h1>
-        <div class="row justify-content-center">
-            <div class="col-lg-4 mt-4">
-                <div class="card educationCard left-card">
-                    <div class="card-body text-center">
-                        <h4 class="card-title">Victory Junior School</h4>
-                        <p class="card-text">Primary School - Graduated in 2015</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mt-4">
-                <div class="card educationCard center-card">
-                    <div class="card-body text-center">
-                        <h4 class="card-title">Dedan Kimathi University</h4>
-                        <p class="card-text">Undergraduate Degree in Computer Science - Graduated in 2024</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mt-4">
-                <div class="card educationCard right-card">
-                    <div class="card-body text-center">
-                        <h4 class="card-title">Ribe Boys High School</h4>
-                        <p class="card-text">Secondary School - Graduated in 2019</p>
+            <!-- Card Column -->
+            <div class="col-md-6">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Tonny Odera</h5>
+                        <p class="card-text">I am a Kenyan native who graduated in computer science from Dedan Kimathi University of Technology and possess experience with networking, data science, and data entry, statistics. I have an intense feeling of motivation, am focused on obtaining things done, and love technology. I also work well in a team and am always prepared to go above and beyond to complete a task.</p>
+                        <p class="card-text">I've worked with Python, Java and am familiar with libraries such as pandas, numpy, seaborn, matplotlib, scikit. I have also worked with frameworks such as Django for website and app development. I am also proficient with Power BI tools for data analysis and visualization.</p>
+                        <p class="card-text">My technical abilities are complemented by my attention to detail and organizational capabilities. I can work efficiently and I have outstanding communication skills.</p>
                     </div>
                 </div>
             </div>
@@ -137,176 +108,163 @@
 </section>
 
 
-<!-- services section -->
-<section id="services">
+  <hr />
+
+  <!-- Education Section -->
+  <section id="education" class="education-section">
+    <h2>Education</h2>
+    <div class="education-cards">
+      <div class="card educationCard"> <!-- Card 1 -->
+        <h3>BSc Computer Science</h3>
+        <p>Dedan Kimathi University</p>
+      </div>
+      <div class="card educationCard"> <!-- Card 2 -->
+        <h3>Certification in Data Science</h3>
+        <p>DataCamp</p>
+      </div>
+      <div class="card educationCard"> <!-- Card 3 -->
+        <h3>Cisco Networking</h3>
+        <p>Cisco Academy</p>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+<!-- Services Section -->
+<section id="services" class="services-section py-5">
     <div class="container">
-        <h1 class="text-center">Services</h1>
-        <div class="row">
-            <div class="col-lg-4 mt-4">
-                <div class="card servicesText">
-                    <div class="card-body text-center">
-                        <i class="fas servicesIcon fa-database"></i>
-                        <h4 class="card-title mt-3">Data Collection</h4>
-                        <p class="card-text mt-3">Experienced in collecting data from surveys, focus groups, and online platforms. Proficient in data collection tools, ensuring accuracy, and upholding ethical standards.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mt-4">
-                <div class="card servicesText">
-                    <div class="card-body text-center">
-                        <i class="fas servicesIcon fa-chart-line"></i>
-                        <h4 class="card-title mt-3">Data Visualization</h4>
-                        <p class="card-text mt-3">Proficient in crafting compelling, informative visualizations for data-driven decision-making. Expert in data visualization tools, committed to accuracy, clarity, and user-friendly design.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mt-4">
-                <div class="card servicesText">
-                    <div class="card-body text-center">
-                        <i class="fas servicesIcon fa-chart-bar"></i>
-                        <h4 class="card-title mt-3">Statistics</h4>
-                        <p class="card-text mt-3">Gather data from surveys, focus groups, and online research platforms with proficiency in data collection tools and software, ensuring data accuracy and ethical collection.</p>
-                    </div>
-                </div>
-            </div>
+      <h2 class="text-center mb-4">What I Offer</h2>
+      <div class="row justify-content-center text-center">
+        <!-- Python Service -->
+        <div class="service-item">
+          <i class="fab fa-python fa-3x"></i>
+          <h5 class="mt-3">Python</h5>
         </div>
-        <div class="row">
-            <div class="col-lg-4 mt-4">
-                <div class="card servicesText">
-                    <div class="card-body text-center">
-                        <i class="fas servicesIcon fa-database"></i>
-                        <h4 class="card-title mt-3">SQL Services</h4>
-                        <p class="card-text mt-3">Skillfully retrieve data from relational databases using advanced SQL queries, ensuring accuracy and ethical practices.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mt-4">
-                <div class="card servicesText">
-                    <div class="card-body text-center">
-                        <i class="fas servicesIcon fa-bolt"></i>
-                        <h4 class="card-title mt-3">Power BI</h4>
-                        <p class="card-text mt-3">Leverage my Power BI expertise for comprehensive data analysis services. Proficient in data modeling, visualization, and connecting diverse sources. Ensure accurate, private, and ethically handled insights.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
- <!-- experience section -->
-<section id="experience">
-    <div class="container mt-4 pt-4">
-        <h1 class="text-center">Experience</h1>
-        <div class="row mt-4">
-            <div class="col-lg-6 mb-4">
-                <div class="card experienceCard">
-                    <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Equity Bank Image">
-                    <div class="card-body text-center">
-                        <h4 class="card-title">EQUITY BANK</h4>
-                        <p class="card-text">I have worked for the bank as a data entry clerk, a volunteer mentor, and a chaperone.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card experienceCard">
-                    <img class="card-img-top" src="images/portfolioImage2.jpg" alt="Mombasa Law Court Image">
-                    <div class="card-body text-center">
-                        <h4 class="card-title">MOMBASA LAW COURT</h4>
-                        <p class="card-text">I had the privilege to undergo my internship at the Mombasa law court ICT department as an ICT staff. During my internship, I learned and leveraged more on Networking and computer hardware maintenance.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-  <!-- contact section -->
-  <section id="contact" class="bg-light">
-      <div class="container mt-4 pt-4">
-          <h1 class="text-center">Contact Me</h1>
-          <div class="row mt-4">
-              <div class="col-lg-6">
-                  <form>
-                      <div class="form-group">
-                          <label for="name">Name</label>
-                          <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                      </div>
-                      <div class="form-group">
-                          <label for="email">Email</label>
-                          <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary mt-3">Submit</button>
-                    </form>
-                </div>
-                <div class="col-lg-6">
-                    <h4>Get in Touch</h4>
-                    <p>If you have any questions or would like to work together, feel free to reach out. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-envelope"></i> tonnyodera6967@gmail.com</li>
-                        <li><i class="fas fa-phone"></i> +254-700-215-847</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Mombasa, Kenya</li>
-                        <div class="social-icons mt-4">
-                            <a href="https://www.facebook.com/yourprofile" target="_blank" class="social-link">
-                                <i class="fab fa-facebook-f me-3"></i>
-                            </a>
-                            <a href="https://www.instagram.com/yourprofile" target="_blank" class="social-link">
-                                <i class="fab fa-instagram me-3"></i>
-                            </a>
-                            <a href="https://x.com/TONNYODERA1" target="_blank" class="social-link">
-                                <i class="fab fa-twitter me-3"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/tonny-odhiambo-381a96254/" target="_blank" class="social-link">
-                                <i class="fab fa-linkedin me-3"></i>
-                            </a>
-                            <a href="https://github.com/oderatonny6967" target="_blank" class="social-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                        
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer id="footer">
-        <div class="container">
-            <p>&copy; 2024 Tonny Odera. All Rights Reserved.</p>
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-<script>
-    // Navbar scroll effect
-    $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 50) {
-            $('.navbarScroll').addClass('scrolled');
-        } else {
-            $('.navbarScroll').removeClass('scrolled');
-        }
-    });
-    document.addEventListener('DOMContentLoaded', () => {
-    const services = document.querySelectorAll('.servicesText');
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.1 });
-
-    services.forEach(service => {
-        observer.observe(service);
-    });
-});
-
-</script>
-  </body>
-  </html>
   
+        <!-- HTML Service -->
+        <div class="service-item">
+          <i class="fab fa-html5 fa-3x"></i>
+          <h5 class="mt-3">HTML</h5>
+        </div>
+  
+        <!-- Git Service -->
+        <div class="service-item">
+          <i class="fab fa-git fa-3x"></i>
+          <h5 class="mt-3">Git</h5>
+        </div>
+  
+       
+        <!-- MySQL Service -->
+        <div class="service-item">
+          <i class="fas fa-database fa-3x"></i>
+          <h5 class="mt-3">MySQL</h5>
+        </div>
+  
+        <!-- Django Service -->
+        <div class="service-item">
+          <i class="fab fa-python fa-3x"></i>
+          <h5 class="mt-3">Django</h5>
+        </div>
+  
+        <!-- CSS Service -->
+        <div class="service-item">
+          <i class="fab fa-css3-alt fa-3x"></i>
+          <h5 class="mt-3">CSS</h5>
+        </div>
+  
+        <!-- Data Analysis Service -->
+        <div class="service-item">
+          <i class="fas fa-chart-line fa-3x"></i>
+          <h5 class="mt-3">Data Analysis</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <hr />
+
+  <!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="project-cards">
+        <div class="project-card">
+            <h3>MyEcommerce Online Shop</h3>
+            <ul>
+              <li>Currently building an online shop using the Python Django framework.</li>
+              <li>Implemented user authentication, product search functionality, and shopping cart features.</li>
+              <li>Integrated with various payment options for seamless transactions.</li>
+              <li>Styled and designed the frontend with HTML, CSS, and JavaScript for an enhanced user experience.</li>
+              <li>Added a wishlist feature allowing users to save products for future purchase.</li>
+            </ul>
+            <a href="https://github.com/oderatonny6967/My-Ecommerce-online-shop.git" class="btn btn-secondary">View on GitHub</a>
+          </div>
+      
+  
+      <!-- Project 1: Expense Tracker Application -->
+      <div class="project-card">
+        <h3>Expense Tracker Application</h3>
+        <ul>
+          <li>Developed a full-stack expense tracker using Node.js and Express.js for backend.</li>
+          <li>Integrated MySQL with Sequelize ORM for managing the database.</li>
+          <li>Implemented key features like user authentication, expense management, and RESTful API endpoints.</li>
+          <li>Created a responsive frontend using HTML, CSS, and JavaScript.</li>
+        </ul>
+        <a href="https://github.com/oderatonny6967/Expense-Tracker-.git" class="btn btn-secondary">View on GitHub</a>
+      </div>
+  
+      <!-- Project 2: MyEcommerce Online Shop -->
+      <div class="project-card">
+        <h3>Water Quality Predictor App</h3>
+        <ul>
+          <li>Developed a mobile application using the Java .</li>
+          <li>Implemented user authentication,Search Expert functionality .</li>
+          <li>A user can be able to  predict or test water qualit based on the water quality parameters such as pH , turbidity.</li>
+          <li>Styled and designed the frontend  JavaAndroid Studio for an enhanced user experience.</li>
+        </ul>
+        <a href="https://github.com/oderatonny6967/Water-Quality.git" class="btn btn-secondary">View on GitHub</a>
+      </div>
+  
+    </div>
+  </section>
+  
+  <hr />
+
+    <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container text-center">
+        <h2>Contact Me</h2>
+        <p><i class="fas fa-envelope"></i> tonnyodera6967@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +254-700-215-847</p>
+        <div class="social-icons mt-4">
+            <a href="https://www.facebook.com/princetonny" target="_blank" class="social-link">
+                <i class="fab fa-facebook-f me-3"></i>
+            </a>
+            <a href="https://www.instagram.com/tonnyodera" target="_blank" class="social-link">
+                <i class="fab fa-instagram me-3"></i>
+            </a>
+            <a href="https://x.com/TONNYODERA1" target="_blank" class="social-link">
+                <i class="fab fa-twitter me-3"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/tonny-odhiambo-381a96254/" target="_blank" class="social-link">
+                <i class="fab fa-linkedin me-3"></i>
+            </a>
+            <a href="https://github.com/oderatonny6967" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+</section>
+  <!-- Footer -->
+  <footer id="footer">
+    <p>© 2024 Tonny Odhiambo Odera | All Rights Reserved</p>
+  </footer>
+
+  <!-- ScrollReveal Initialization -->
+  <script>
+    ScrollReveal().reveal('.hero-text', { delay: 300, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('.educationCard', { interval: 200, distance: '50px', origin: 'left' });
+  </script>
+</body>
+</html>
